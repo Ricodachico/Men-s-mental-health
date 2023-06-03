@@ -1,0 +1,29 @@
+import random
+
+def get_positive_message():
+    positive_messages = [
+        "You are not alone. Reach out to someone you trust and share your feelings. 😊",
+        "Remember to take care of yourself. Engage in activities that bring you joy and relaxation. 🌞",
+        "Your mental health matters. Seek professional help if needed, there is no shame in it. 🙌",
+        "Stay positive and focus on the things you can control. You have the strength to overcome this. 💪",
+        "It's okay to ask for help. Surround yourself with supportive people who can offer guidance. 🤗",
+        "Take a break and do something that brings you peace. Your well-being is important. ✨",
+        "Remember that self-care is not selfish. Prioritize your mental health. 🌈",
+        "You are stronger than you think. Believe in yourself and your ability to overcome challenges. 💫",
+        "It's okay to not be okay sometimes. Reach out for support and take things one step at a time. 🌻",
+        "You deserve to be happy and healthy. Make self-care a priority in your life. 😄",
+        # Add more positive messages here...
+        # ...
+        # ...
+    ]
+    return random.choice(positive_messages)
+
+def get_positive_message_for_problem(problem):
+    positive_message = get_positive_message()
+    return positive_message
+
+# Example usage:
+problem = "I'm feeling stressed about work."
+positive_message = get_positive_message_for_problem(problem)
+print("Positive message for the problem:")
+print(positive_message)
